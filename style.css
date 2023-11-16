@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    height: 100vh; 
+}
+
+nav.menu-lateral{
+    width: 50px;
+    height: 100%;
+    background-color: #000;
+    padding: 40px 0 40px 0;
+    box-shadow: 3px 0 0 #C72C2C;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .4s;
+}
+
+nav.menu-lateral.expandir{
+    width: 300px;
+}
+
+.btn-expandir{
+    width: 100%;
+    padding-left: 10px;
+}
+
+.btn-expandir i{
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+
+
+ul li.item-menu{
+    transition: .2s;
+}
+
+ul li.ativo{
+    background:linear-gradient(-120deg, #D62121, #C72C2C, #3a1111);
+}
+
+ul li.item-menu:hover{
+background:linear-gradient(-120deg, #D62121, #C72C2C, #3a1111);
+}
+
+ul li.item-menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 30px;
+
+}
+
+ul li.item-menu a .text-link{
+    margin-left: 70px;
+    transition: .5s;
+    opacity: 0;
+
+}
+
+nav.menu-lateral.expandir .text-link{
+    margin-left: 40px;
+    opacity: 1;
+
+}
+
+ul li.item-menu a .icon-item{
+    font-size: 20px;
+    margin-left: 10px;
+
+}
